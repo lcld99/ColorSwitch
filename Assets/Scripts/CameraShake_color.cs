@@ -16,7 +16,7 @@ public class CameraShakeColor : MonoBehaviour
     {
         didShake = false;
         flashImage = flash.GetComponent<Image>();
-        originalPos = transform.localPosition; // Cache the original position at start
+        originalPos = transform.localPosition; // Cache the original position at start, better performance
     }
 
     private void Update()
